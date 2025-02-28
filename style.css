@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cuerpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vw;
+  flex-direction: column;
+}
+
+.navegacion {
+  justify-items: center;
+  margin-top: 3vw;
+  width: 200px;
+  height: 800px;
+  background-color: antiquewhite;
+  padding: 25px;
+}
+
+.lista__item {
+  margin: 8px;
+  width: auto;
+  height: 25px;
+  background-color: rgb(240, 233, 204);
+}
+
+.lista__link {
+  text-decoration: none;
+  color: black;
+}
+
+.lista__link:hover {
+  color: white;
+  background-color: black;
+}
