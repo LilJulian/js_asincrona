@@ -1,4 +1,4 @@
-//Usando la funcion set timeout
+// Usando la funcion set timeout
 
 // function imprimirNumeros(desde, hasta) {
 //   setTimeout(() => {
@@ -10,17 +10,45 @@
 // }
 
 
-// let anidado = setTimeout(function imprimirNumeros(desde, hasta) {
+// const aumentarNum = (desde, hasta) => {
 //   if (desde <= hasta) {
-//     console.log(desde++);
+//     console.log(desde);
+//   } else console.log("ya");
+
+// }
+
+
+// const imprimirNumeros = (desde, hasta, aumentarNum) => {
+//   setTimeout(() => {
+//     aumentarNum(desde, hasta);
+//     desde++;
+//     imprimirNumeros(desde, hasta, aumentarNum);
 //   }
-//   anidado = setTimeout(imprimirNumeros(desde, hasta), 1000);
-// }, 1000)
+//     , 1000);
+// }
 
 
-// console.log(anidado);
+// const aumentarNum = (desde, hasta) => {
+//   if (desde <= hasta) {
+//     console.log(desde);
+//   } else console.log("ya");
 
-// console.log(temporizador);
+// }
+
+
+// const imprimirNumeros = (desde, hasta, aumentarNum) => {
+//   setTimeout(() => {
+//     aumentarNum(desde, hasta);
+//     desde++;
+//     setTimeout(() => {
+//       imprimirNumeros(desde, hasta, aumentarNum);
+//     }, 500);
+//   }
+//     , 500);
+// }
+
+
+// imprimirNumeros(1, 6, aumentarNum);
 
 
 
@@ -33,4 +61,24 @@
 //   }, 1000);
 // }
 
-// imprimirNumeros(1, 6);
+
+
+
+const respuesta = (rta) => {
+  if (rta > 20) {
+    alert("Puede comprar algo")
+  } else {
+    alert("No puede comprar")
+  }
+};
+
+const sumar = (a, b, callback) => {
+  let c = a + b;
+  // todo el cuerpo de la función
+  //.
+  //.
+  callback(c);
+}
+
+
+sumar(20, 1, respuesta)

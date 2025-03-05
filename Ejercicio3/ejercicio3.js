@@ -4,22 +4,33 @@
 //     • lo pushee a un nuevo array
 //     • devuelva el array final con el resultado de cada una de las llamadas al callback.
 
-function map(arreglo, callback) {
-  let nuevoArreglo = []
-  for (let i = 0; i < arreglo.length; i++) {
-    num = arreglo[i];
-    console.log(nuevoArreglo);
 
+
+//Metodo map
+// const numbers = [1, 2, 3, 4, 5]
+// const newNumber = numbers.map(function (number) {
+//   return number * 2
+// })
+
+// console.log(newNumber);
+
+
+let lastArray = [];
+
+const callback = (num) => {
+  return num * 10;
+}
+
+const map = (array, callback) => {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 == 0) {
+      lastArray.push(callback(array[i]));
+    }
   }
-
+  console.log(lastArray);
 
 }
 
-function callback(resultado, nuevoArreglo) {
-  for (let j = 0; j < arreglo.length; j++) {
-    nuevoArreglo[i].push(i)
-  }
-  callback(num);
-}
+map([1, 2, 3, 4, 5, 6, 7, 8], callback);
 
-map([1, 2, 3, 5], callback);
+
