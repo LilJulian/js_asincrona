@@ -1,7 +1,6 @@
-// 12. Define una función asincrónica que espere 1 segundo y luego devuelva una cadena que  diga "Operación completada".Utiliza async / await.
+// 12. Define una función asincrónica que espere 1 segundo y luego devuelva una 
+// cadena que  diga "Operación completada".Utiliza async / await.
 
-const asincrona = cadena => {
-  async (params) => {
-
-  }
+async function name(params) {
+  
 }

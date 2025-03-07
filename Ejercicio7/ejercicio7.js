@@ -4,7 +4,7 @@
 // • sí ningún callback devuelve true, devuelva undefined
 
 
-//Funcion find
+// // Funcion find
 // const array1 = [5, 12, 8, 130, 44];
 // const found = array1.find((element) => element > 10);
 // console.log(found);
@@ -21,4 +21,4 @@ const encontrar = (array, llamado) => {
   return undefined;
 }
 
-console.log(encontrar([5, 2, 8, 1, 4], resultado));
+console.log(encontrar([5, 2, 8, 11, 4], resultado));
