@@ -1,0 +1,14 @@
+[
+    {
+        "saludo" : "hola",
+        "doce" : 12,
+        "grito" : "aaaa",
+        "uno" : 1
+    },
+    {
+        "despedido" : "adios",
+        "cetre" : 13,
+        "susurro" : "psps",
+        "dos" : 2
+    }
+]

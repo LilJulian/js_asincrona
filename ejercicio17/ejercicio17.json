@@ -1,0 +1,17 @@
+[
+    {
+      "nombre": "ARK: Survival Evolved",
+      "plataforma": "PC",
+      "precio": 31
+    },
+    {
+      "nombre": "Assassin's Creed Valhalla",
+      "plataforma": "PlayStation 5",
+      "precio": 50
+    },
+    {
+      "nombre": "Sea of Thieves",
+      "plataforma": "Xbox Series X",
+      "precio": 160
+    }
+  ]
